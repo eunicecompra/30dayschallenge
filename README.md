@@ -6,17 +6,18 @@
 java8_implementation/HelloWorld.java
 ```
 
-## [Day 9: Recursion 3](https://www.hackerrank.com/challenges/30-recursion/problem)
+## Python 3 Implementation
+### [Day 9: Recursion 3](https://www.hackerrank.com/challenges/30-recursion/problem)
 ```
 factorial.py
 ```
 
-## [Day 10: Binary Numbers](https://www.hackerrank.com/challenges/30-binary-numbers/problem)
+### [Day 10: Binary Numbers](https://www.hackerrank.com/challenges/30-binary-numbers/problem)
 ```
 binary.py
 ```
 
-## [Day 22: Binary Search Trees](https://www.hackerrank.com/challenges/30-binary-search-trees/problem)
+### [Day 22: Binary Search Trees](https://www.hackerrank.com/challenges/30-binary-search-trees/problem)
 ```
 bst.py
 ```
