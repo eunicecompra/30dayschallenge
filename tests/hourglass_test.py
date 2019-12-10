@@ -13,4 +13,5 @@ class Hourglass(unittest.TestCase):
             [0, 0, 0, 2, 0, 0],
             [0, 0, 1, 2, 4, 0]
         ]
-        hourglass.find_max_sum_hourglass(array)
+        max_sum = hourglass.find_max_sum_hourglass(array)
+        self.assertEqual(19, max_sum)
