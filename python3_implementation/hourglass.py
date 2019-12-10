@@ -1,22 +1,22 @@
-def find_max_sum_hourglass(array):
+def find_max_sum_hourglass(array_2d):
     sums = []
-    array_length = len(array)
+    array_len = len(array_2d)
     x_index = 0
-    for x in array:
-        x_length = len(x)
-        for i in x:
-            if i+2 >= x_length:
+    for x_axis in array_2d:
+        x_len = len(x_axis)
+        for y_axis in x_axis:
+            if y_axis+2 >= x_len:
                 continue
-            top = x[i] + x[i+1] + x[i+2]
+            top = x_axis[y_axis] + x_axis[y_axis+1] + x_axis[y_axis+2]
 
-            if x_index+1 >= array_length:
+            if x_index+1 >= array_len:
                 continue
-            middle = array[x_index+1][i+1]
+            middle = array_2d[x_index+1][y_axis+1]
 
-            if x_index+2 >= array_length:
+            if x_index+2 >= array_len:
                 continue
-            bottom_x = array[x_index+2]
-            bottom = bottom_x[i] + bottom_x[i+1] + bottom_x[i+2]
+            bottom_x = array_2d[x_index+2]
+            bottom = bottom_x[y_axis] + bottom_x[y_axis+1] + bottom_x[y_axis+2]
 
             sum = top + middle + bottom
             sums.append(sum)
