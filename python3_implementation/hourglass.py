@@ -11,11 +11,11 @@ def find_max_sum_hourglass(array_2d):
             top = x_axis + y_axis[x_index+1] + y_axis[x_index+2]
 
             if y_index+1 >= array_len:
-                continue
+                break
             middle = array_2d[y_index+1][x_index+1]
 
             if y_index+2 >= array_len:
-                continue
+                break
             bottom_x = array_2d[y_index+2]
             bottom = bottom_x[x_index] + bottom_x[x_index+1] + bottom_x[x_index+2]
 
