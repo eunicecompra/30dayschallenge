@@ -13,7 +13,11 @@
 
 ### [Day 11: 2D Arrays](https://www.hackerrank.com/challenges/30-2d-arrays/problem)
 [python3_implementation/hourglass.py](./python3_implementation/hourglass.py)
+
 [tests/hourglass_test.py](./tests/hourglass_test.py)
+```
+python3 -m unittest tests/hourglass_test.py
+```
 
 ### [Day 22: Binary Search Trees](https://www.hackerrank.com/challenges/30-binary-search-trees/problem)
 [bst.py](bst.py)
