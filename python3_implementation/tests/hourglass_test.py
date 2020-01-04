@@ -1,6 +1,6 @@
 import unittest
 
-from python3_implementation import hourglass
+from src import hourglass
 
 class Hourglass(unittest.TestCase):
 
