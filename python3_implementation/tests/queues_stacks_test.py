@@ -32,3 +32,4 @@ class Queues_Stacks(unittest.TestCase):
         s.enqueueCharacter('a')
         s.enqueueCharacter('r')
         self.assertEqual(s.dequeueCharacter(), 's')
+        self.assertListEqual(list(s.string_queue), ['t','a','r'])
