@@ -16,3 +16,7 @@ class Queues_Stacks(unittest.TestCase):
     def test_popCharacter(self):
         s = Solution()
         s.popCharacter()
+
+    def test_dequeueCharacter(self):
+        s = Solution()
+        s.dequeueCharacter()

@@ -10,6 +10,9 @@ class Solution:
     def popCharacter(self):
         return
 
+    def dequeueCharacter(self):
+        return
+
 # read the string s
 s=input()
 #Create the Solution class object
