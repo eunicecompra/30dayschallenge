@@ -1,9 +1,11 @@
 import sys
 
+from collections import deque
+
 class Solution:
     def __init__(self):
         self.string_stack = []
-        self.string_queue = []
+        self.string_queue = deque([])
 
     def pushCharacter(self, c):
         self.string_stack.append(c)
@@ -15,7 +17,7 @@ class Solution:
         return self.string_stack.pop()
 
     def dequeueCharacter(self):
-        return
+        return self.string_queue.popleft()
 
 # read the string s
 s=input()

@@ -1,5 +1,6 @@
 import unittest
 
+from collections import deque
 from src.queues_stacks import Solution
 
 class Queues_Stacks(unittest.TestCase):
@@ -13,7 +14,7 @@ class Queues_Stacks(unittest.TestCase):
     def test_enqueueCharacter(self):
         s = Solution()
         s.enqueueCharacter('r')
-        self.assertListEqual(s.string_queue, ['r'])
+        self.assertListEqual(list(s.string_queue), ['r'])
 
     def test_popCharacter(self):
         s = Solution()
@@ -26,4 +27,8 @@ class Queues_Stacks(unittest.TestCase):
 
     def test_dequeueCharacter(self):
         s = Solution()
-        s.dequeueCharacter()
+        s.enqueueCharacter('s')
+        s.enqueueCharacter('t')
+        s.enqueueCharacter('a')
+        s.enqueueCharacter('r')
+        self.assertEqual(s.dequeueCharacter(), 's')
