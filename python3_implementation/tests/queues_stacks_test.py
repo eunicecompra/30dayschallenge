@@ -22,7 +22,7 @@ class Queues_Stacks(unittest.TestCase):
         s.pushCharacter('a')
         s.pushCharacter('r')
         self.assertEqual(s.popCharacter(), 'r')
-
+        self.assertListEqual(s.string_stack, ['s','t','a'])
 
     def test_dequeueCharacter(self):
         s = Solution()
