@@ -1,8 +1,11 @@
 import sys
 
 class Solution:
+    def __init__(self):
+        self.string_stack = []
+
     def pushCharacter(self, c):
-        return
+        self.string_stack.append(c)
 
     def enqueueCharacter(self, c):
         return
