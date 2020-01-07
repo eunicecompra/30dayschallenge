@@ -12,7 +12,7 @@ class Solution:
         self.string_queue.append(c)
 
     def popCharacter(self):
-        return
+        return self.string_stack.pop()
 
     def dequeueCharacter(self):
         return
