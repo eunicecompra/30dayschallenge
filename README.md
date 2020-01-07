@@ -24,5 +24,13 @@ python3 -m unittest tests/hourglass_test.py
 ### [Day 15: LinkedList](https://www.hackerrank.com/challenges/30-linked-list/problem)
 [python3_implementation/src/linkedlist.py](./python3_implementation/src/linkedlist.py)
 
+### [Day 18: Queues and Stacks](https://www.hackerrank.com/challenges/30-queues-stacks/problem)
+[python3_implementation/src/queues_stacks.py](./python3_implementation/src/queues_stacks.py)
+[python3_implementation/tests/queues_stacks_test.py](python3_implementation/tests/queues_stacks_test.py)
+```
+cd python3_implementation
+python3 -m unittest tests/queues_stacks_test.py
+```
+
 ### [Day 22: Binary Search Trees](https://www.hackerrank.com/challenges/30-binary-search-trees/problem)
 [python3_implementation/src/bst.py](python3_implementation/src/bst.py)
