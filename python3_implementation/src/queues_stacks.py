@@ -2,6 +2,14 @@ import sys
 
 class Solution:
     # Write your code here
+    def pushCharacter(self, c):
+        return
+
+    def enqueueCharacter(self, c):
+        return
+
+    def popCharacter(self):
+        return
 
 # read the string s
 s=input()
