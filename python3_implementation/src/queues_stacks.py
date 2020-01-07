@@ -1,7 +1,6 @@
 import sys
 
 class Solution:
-    # Write your code here
     def pushCharacter(self, c):
         return
 
