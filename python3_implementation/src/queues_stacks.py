@@ -3,12 +3,13 @@ import sys
 class Solution:
     def __init__(self):
         self.string_stack = []
+        self.string_queue = []
 
     def pushCharacter(self, c):
         self.string_stack.append(c)
 
     def enqueueCharacter(self, c):
-        return
+        self.string_queue.append(c)
 
     def popCharacter(self):
         return

@@ -12,7 +12,8 @@ class Queues_Stacks(unittest.TestCase):
 
     def test_enqueueCharacter(self):
         s = Solution()
-        s.enqueueCharacter('s')
+        s.enqueueCharacter('r')
+        self.assertListEqual(s.string_queue, ['r'])
 
     def test_popCharacter(self):
         s = Solution()
