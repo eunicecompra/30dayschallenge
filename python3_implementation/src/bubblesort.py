@@ -4,5 +4,12 @@ import sys
 
 n = int(input().strip())
 a = list(map(int, input().strip().split(' ')))
-# Write Your Code Here
+
+def do_bubble_sort(size, array):
+    for i in range(size):
+        if array[i] > array[i+1]:
+            tmp = array[i]
+            array[i] = array[i+1]
+            array[i+1] = array[i]
+    return array
 
