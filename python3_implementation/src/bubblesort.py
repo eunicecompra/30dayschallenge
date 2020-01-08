@@ -7,9 +7,12 @@ a = list(map(int, input().strip().split(' ')))
 
 def do_bubble_sort(size, array):
     for i in range(size):
+        if i+1 == size:
+            break
+
         if array[i] > array[i+1]:
             tmp = array[i]
             array[i] = array[i+1]
-            array[i+1] = array[i]
+            array[i+1] = tmp
     return array
 
