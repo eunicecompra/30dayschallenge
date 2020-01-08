@@ -26,3 +26,9 @@ class BubbleSort:
 
 n = int(input().strip())
 a = list(map(int, input().strip().split(' ')))
+
+b = BubbleSort()
+sorted_a = b.do_bubble_sort(n,a)
+print('Array is sorted in ' + str(b.swap_cnt) + ' swaps.')
+print('First Element: ' + str(sorted_a[0]))
+print('Last Element: ' + str(sorted_a[n-1]))
