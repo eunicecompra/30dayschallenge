@@ -2,9 +2,6 @@
 
 import sys
 
-n = int(input().strip())
-a = list(map(int, input().strip().split(' ')))
-
 class BubbleSort:
     def __init__(self):
         self.swap_cnt = 0
@@ -27,3 +24,5 @@ class BubbleSort:
 
         return array
 
+n = int(input().strip())
+a = list(map(int, input().strip().split(' ')))
