@@ -5,20 +5,25 @@ import sys
 n = int(input().strip())
 a = list(map(int, input().strip().split(' ')))
 
-def do_bubble_sort(size, array):
-    swapped = True
+class BubbleSort:
+    def __init__(self):
+        self.swap_cnt = 0
 
-    while(swapped):
-        swapped = False
-        for i in range(size):
-            if i+1 == size:
-                break
+    def do_bubble_sort(self, size, array):
+        swapped = True
 
-            if array[i] > array[i+1]:
-                tmp = array[i]
-                array[i] = array[i+1]
-                array[i+1] = tmp
-                swapped = True
+        while(swapped):
+            swapped = False
+            for i in range(size):
+                if i+1 == size:
+                    break
 
-    return array
+                if array[i] > array[i+1]:
+                    tmp = array[i]
+                    array[i] = array[i+1]
+                    array[i+1] = tmp
+                    swapped = True
+                    self.swap_cnt += 1
+
+        return array
 
