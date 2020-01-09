@@ -26,6 +26,7 @@ class Solution:
         while(bst_queue):
             node = bst_queue.popleft()
             ordered.append(node.data)
+            print(node.data, end=" ")
             if node.left is not None:
                 bst_queue.append(node.left)
             if node.right is not None:
