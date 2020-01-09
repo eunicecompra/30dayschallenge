@@ -7,7 +7,7 @@ class BSTLevelOrderTest(unittest.TestCase):
         tree_elements = [3,5,4,7,2,1]
         root = None
         s = Solution()
-        for i in range(tree_elements):
+        for i in tree_elements:
             root = s.insert(root,i)
         order = s.levelOrder(root)
         self.assertListEqual(order, [3,2,5,1,4,7])
