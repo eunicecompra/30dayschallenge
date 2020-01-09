@@ -18,7 +18,7 @@ class Solution:
         return root
 
     def levelOrder(self,root):
-        #Write your code here
+        return
 
 T=int(input())
 myTree=Solution()
