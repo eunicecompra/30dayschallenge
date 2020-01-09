@@ -23,7 +23,7 @@ class Solution:
         ordered = []
         bst_queue = deque([])
         bst_queue.append(root)
-        while(len(bst_queue)!=0):
+        while(bst_queue):
             node = bst_queue.popleft()
             ordered.append(node.data)
             if node.left is not None:
