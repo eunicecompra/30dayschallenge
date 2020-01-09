@@ -1,5 +1,7 @@
 import sys
 
+from collections import deque
+
 class Node:
     def __init__(self,data):
         self.right=self.left=None
@@ -18,7 +20,20 @@ class Solution:
         return root
 
     def levelOrder(self,root):
-        return
+        ordered = []
+        bst_queue = deque([])
+        bst_queue.append(root)
+        while(len(bst_queue)!=0):
+            node = bst_queue.popleft()
+            if node is None:
+                continue
+            ordered.append(node.data)
+            if node.left is not None:
+                bst_queue.append(node.left)
+            if root.right is not None:
+                bst_queue.append(node.right)
+
+        return ordered
 
 T=int(input())
 myTree=Solution()
