@@ -50,3 +50,7 @@ python3 -m unittest tests/bubblesort_test.py
 cd python3_implementation
 python3 -m unittest tests/bst_level_order_test.py
 ```
+
+## Github workflow
+On push, workflow runs lint using flake8 and tests on Python codes.
+See [pythonapp.yml](.github/workflows/pythonapp.yml).
