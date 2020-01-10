@@ -28,10 +28,14 @@ def find_max_sum_hourglass(array_2d):
     sums.sort()
     return sums[len(sums)-1]
 
-
-if __name__ == '__main__':
+def main():
     arr = []
 
     for _ in range(6):
         arr.append(list(map(int, input().rstrip().split())))
-    print(find_max_sum_hourglass(arr))
+    max_sum=find_max_sum_hourglass(arr)
+    print(max_sum)
+    return max_sum
+
+if __name__ == '__main__':
+    main()

@@ -34,10 +34,14 @@ class Solution:
 
         return ordered
 
-T=int(input())
-myTree=Solution()
-root=None
-for i in range(T):
-    data=int(input())
-    root=myTree.insert(root,data)
-myTree.levelOrder(root)
+def main():
+    T=int(input())
+    myTree=Solution()
+    root=None
+    for i in range(T):
+        data=int(input())
+        root=myTree.insert(root,data)
+    return myTree.levelOrder(root)
+
+if __name__ == "__main__":
+    main()

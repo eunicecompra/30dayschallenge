@@ -5,6 +5,7 @@ import sys
 class BubbleSort:
     def __init__(self):
         self.swap_cnt = 0
+        self.sorted_array = []
 
     def do_bubble_sort(self, size, array):
         swapped = True
@@ -21,14 +22,19 @@ class BubbleSort:
                     array[i+1] = tmp
                     swapped = True
                     self.swap_cnt += 1
+        self.sorted_array = array
+        return self.sorted_array
 
-        return array
+def main():
+    n = int(input().strip())
+    a = list(map(int, input().strip().split(' ')))
 
-n = int(input().strip())
-a = list(map(int, input().strip().split(' ')))
+    b = BubbleSort()
+    sorted_a = b.do_bubble_sort(n,a)
+    print('Array is sorted in ' + str(b.swap_cnt) + ' swaps.')
+    print('First Element: ' + str(sorted_a[0]))
+    print('Last Element: ' + str(sorted_a[n-1]))
+    return b
 
-b = BubbleSort()
-sorted_a = b.do_bubble_sort(n,a)
-print('Array is sorted in ' + str(b.swap_cnt) + ' swaps.')
-print('First Element: ' + str(sorted_a[0]))
-print('Last Element: ' + str(sorted_a[n-1]))
+if __name__ == "__main__":
+    main()
