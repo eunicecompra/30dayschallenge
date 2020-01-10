@@ -1,10 +1,11 @@
 import unittest
 
-from src.bubblesort import BubbleSort
+from unittest.mock import patch
+from src import bubblesort
 
 class BubbleSortTest(unittest.TestCase):
-    def test_bubble_sort(self):
-        b = BubbleSort()
-        sorted_list = b.do_bubble_sort(3, [3,2,1])
-        self.assertListEqual(sorted_list, [1,2,3])
-        self.assertEqual(b.swap_cnt, 3)
+    @patch("builtins.input", side_effect=["3","3 2 1"])
+    def test_bubble_sort(self, test_data):
+        s = bubblesort.main()
+        self.assertListEqual(s.sorted_array, [1,2,3])
+        self.assertEqual(s.swap_cnt, 3)
