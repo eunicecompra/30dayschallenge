@@ -1,13 +1,12 @@
 import unittest
 
-from src.bst_level_order import Solution
+from unittest.mock import patch
+from src import bst_level_order
 
 class BSTLevelOrderTest(unittest.TestCase):
-    def testLevelOrder(self):
-        tree_elements = [3,5,4,7,2,1]
-        root = None
-        s = Solution()
-        for i in tree_elements:
-            root = s.insert(root,i)
-        order = s.levelOrder(root)
+    test_data = [6,3,5,4,7,2,1]
+
+    @patch("builtins.input", side_effect=test_data)
+    def testLevelOrder(self, test_data):
+        order = bst_level_order.main()
         self.assertListEqual(order, [3,2,5,1,4,7])
